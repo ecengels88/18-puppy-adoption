@@ -1,0 +1,85 @@
+<template lang="html">
+  <div class="app">
+
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="" class="nav-item is-brand">
+          <h1 class="nav-item is-brand">
+            <a href="/" class="nav-item is-active">Puppies</a>
+          </h1>
+        </a>
+      </div>
+      <div class="nav-right nav-menu">
+        <a href="/" class="nav-item">All Puppies</a>
+        <a href="/new" class="nav-item">Add Puppy</a>
+      </div>
+    </nav>
+
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="panel">
+              <h2 class="panel-heading">
+                Adopt a Pupper
+              </h2>
+              <div class="panel-block">
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-64x64">
+                      <img src="https://s-media-cache-ak0.pinimg.com/736x/ce/d0/ba/ced0ba9d7163753c3406049c75abe315.jpg" alt="" class="">
+                    </p>
+                  </div>
+                  <div class="media-right">
+                    <h3 class="name">Shawarma</h3>
+                    <a href="/detail(id)" class="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-block">
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-64x64">
+                      <img src="http://media.breitbart.com/media/2016/11/puppy-getty-640x480.jpg" alt="" class="">
+                    </p>
+                  </div>
+                  <div class="media-right">
+                    <h3 class="name">DiGiorno</h3>
+                    <a href="/detail(id)" class="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-block">
+                <div class="media">
+                  <div class="media-left">
+                    <p class="image is-64x64">
+                      <img src="http://www.notcot.com/images/2012/06/duckling-swim-03-2395.jpg" alt="" class="">
+                    </p>
+                  </div>
+                  <div class="media-right">
+                    <h3 class="name">Peking</h3>
+                    <a href="/detail(id)" class="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+    };
+  },
+
+  methods: {
+
+  },
+};
+</script>
