@@ -9,7 +9,13 @@ export default {
   data() {
     return {
       formValues: {
-
+        name: '',
+        age: '',
+        sex: '',
+        color: '',
+        breed: '',
+        'image-url': '',
+        description: '',
       }
     };
   },
