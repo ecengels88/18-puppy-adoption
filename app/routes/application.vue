@@ -64,6 +64,9 @@
               </div>
             </div>
           </div>
+          <div class="column is-two-third">
+            <router-view></router-view>
+          </div>
         </div>
       </div>
     </div>
