@@ -5,7 +5,7 @@ import VueRouter from 'vue-router';
 import App from './routes/application.vue';
 import Index from './routes/index.vue';
 import NewPage from './routes/new.vue';
-import DetailsPage from './routes/details.vue';
+import DetailsPage from './routes/detail.vue';
 
 Vue.use(VueRouter);
 
@@ -21,9 +21,9 @@ const routes = [
     name: 'new',
   },
   {
-    path: '/:id';
+    path: '/:id',
     component: DetailsPage,
-    name: 'details';
+    name: 'details',
   }
 ];
 
