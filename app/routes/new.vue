@@ -36,6 +36,10 @@
         <label for="Pup-description" class="label">Description</label>
         <textarea type="text" class="input"></textarea>
       </p>
+      <p class="control">
+        <a href="/" class="button">Back</a>
+        <button class="button is-info">Submit</button>
+      </p>
     </form>
   </div>
 </template>
