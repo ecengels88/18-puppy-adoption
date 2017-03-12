@@ -3,15 +3,15 @@
 
     <nav class="nav">
       <div class="nav-left">
-        <a href="" class="nav-item is-brand">
+        <router-link to="" class="nav-item is-brand">
           <h1 class="nav-item is-brand">
-            <a href="/" class="nav-item is-active">Puppies</a>
+            <router-link to="/" class="nav-item is-active">Puppies</router-link>
           </h1>
-        </a>
+        </router-link>
       </div>
       <div class="nav-right nav-menu">
-        <a href="/" class="nav-item">All Puppies</a>
-        <a href="/new" class="nav-item">Add Puppy</a>
+        <router-link to="/" class="nav-item">All Puppies</router-link>
+        <router-link to="/new" class="nav-item">Add Puppy</router-link>
       </div>
     </nav>
 
@@ -32,7 +32,7 @@
                   </div>
                   <div class="media-right">
                     <h3 class="name">Shawarma</h3>
-                    <a href="/detail(id)" class="button">Read More</a>
+                    <router-link to="/detail(id)" class="button">Read More</router-link>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@
                   </div>
                   <div class="media-right">
                     <h3 class="name">DiGiorno</h3>
-                    <a href="/detail(id)" class="button">Read More</a>
+                    <router-link to="/detail(id)" class="button">Read More</router-link>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@
                   </div>
                   <div class="media-right">
                     <h3 class="name">Peking</h3>
-                    <a href="/detail(id)" class="button">Read More</a>
+                    <router-link to="/detail(id)" class="button">Read More</router-link>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@
         <h1 class="title level-item">Puppies for Adoption</h1>
       </div>
       <div class="level-right">
-        <a href="/new" class="button is-info level-item">Add a Pupper</a>
+        <router-link to="/new" class="button is-info level-item">Add a Pupper</router-link>
       </div>
     </div>
     <table class="table">

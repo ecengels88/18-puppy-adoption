@@ -37,7 +37,7 @@
         <textarea type="text" class="input"></textarea>
       </p>
       <p class="control">
-        <a href="/" class="button">Back</a>
+        <router-link to="/" class="button">Back</router-link>
         <button class="button is-info">Submit</button>
       </p>
     </form>
