@@ -3,15 +3,15 @@
     <h2 class="title">Found a Pupper? We can help!</h2>
     <form action="">
       <p class="control">
-        <label for="Pup-name" class="label">Name</label>
+        <label for="name" class="label">Name</label>
         <input type="text" class="input">
       </p>
       <p class="control">
-        <label for="Pup-age" class="label">Age</label>
+        <label for="age" class="label">Age</label>
         <input type="text" class="input">
       </p>
       <p class="control">
-        <label for="Pup-sex" class="label">Sex</label>
+        <label for="sex" class="label">Sex</label>
         <span class="select">
           <select>
             <option>Please Select an Option</option>
@@ -21,19 +21,19 @@
         </span>
       </p>
       <p class="control">
-        <label for="Pup-color" class="label">Color</label>
+        <label for="color" class="label">Color</label>
         <input type="text" class="input">
       </p>
       <p class="control">
-        <label for="Pup-breed" class="label">Breed</label>
+        <label for="breed" class="label">Breed</label>
         <input type="text" class="input">
       </p>
       <p class="control">
-        <label for="Pup-img" class="label">Image URL</label>
+        <label for="img" class="label">Image URL</label>
         <input type="text" class="input">
       </p>
       <p class="control">
-        <label for="Pup-description" class="label">Description</label>
+        <label for="description" class="label">Description</label>
         <textarea type="text" class="input"></textarea>
       </p>
       <p class="control">
