@@ -31,7 +31,7 @@
                     </p>
                   </div>
                   <div class="media-right">
-                    <h3 class="name">{{pups.name}}</h3>
+                    <h3 class="name">Shawarma</h3>
                     <router-link to="/detail(id)" class="button">Read More</router-link>
                   </div>
                 </div>
@@ -75,12 +75,13 @@
 </template>
 
 <script>
+import store from '../store';
+import { findAll } from '../action/puppy';
+
 export default {
   data() {
     return {
-      pups: {
-        name: 'Shawarma',
-      }
+
     };
   },
 
