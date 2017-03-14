@@ -81,8 +81,12 @@ import { findAll } from '../action/puppy';
 export default {
   data() {
     return {
-
+      puppies: this.$select('puppies'),
     };
+  },
+
+  created() {
+    store.dispatch(findAll());
   },
 
   methods: {
