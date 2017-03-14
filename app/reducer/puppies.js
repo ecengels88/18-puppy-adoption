@@ -8,6 +8,8 @@ export default function puppies(state = [], action) {
     case 'PUPPY@CREATE_COMPLETE':
     case 'PUPPY@UPDATE_COMPLETE':
       return _.unionBy([action.data], state, 'id');
+    case 'PUPPY@DESTROY_COMPLETE':
+      return state.filter(p => p.id !== action.id);
     default:
       return state;
   }

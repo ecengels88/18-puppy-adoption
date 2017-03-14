@@ -7,6 +7,9 @@
           <span v-if="currentPuppy.adopted">I'm Adopted!</span>
           <span v-else>Adopt Me!</span>
         </button>
+        <button class="button is-danger" @click="destroy">
+          Forget Me
+        </button>
       </h2>
       <div class="columns">
         <figure class="column is-half is-offset-one-quarter">
@@ -50,7 +53,7 @@
 </template>
 
 <script>
-import { toggleAdopted, findOne } from '../action/puppy';
+import { toggleAdopted, findOne, destroy } from '../action/puppy';
 import store from '../store';
 
 export default {
@@ -77,6 +80,12 @@ export default {
 
     adoptMe() {
       store.dispatch(toggleAdopted(this.currentPuppy));
+    },
+
+    destroy() {
+      store.dispatch(destroy(this.currentPuppy.id)).then(() => {
+        this.$router.push({ name: 'index' });
+      })
     }
   },
 };

@@ -50,7 +50,7 @@
 
 <script>
 import store from '../store';
-import { findAll } from '../action/puppy';
+import { findAll, destroy } from '../action/puppy';
 
 export default {
   data() {
@@ -64,7 +64,6 @@ export default {
   },
 
   methods: {
-
   },
 };
 </script>

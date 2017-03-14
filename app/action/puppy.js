@@ -76,3 +76,13 @@ export function update(id, formData) {
 export function toggleAdopted(puppy) {
   return update(puppy.id, { ...puppy, adopted: !puppy.adopted });
 }
+
+const destroyComplete = id => ({ type: 'PUPPY@DESTROY_COMPLETE', id });
+
+export function destroy(id) {
+  return dispatch => fetch(`${apiURL}/${id}`, {
+    method: 'delete',
+  }).then(() => {
+    dispatch(destroyComplete(id));
+  });
+}
