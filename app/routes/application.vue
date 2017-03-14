@@ -60,7 +60,7 @@ export default {
   },
 
   created() {
-    store.dispatch(findAll());
+    store.dispatch(findAll(''));
   },
 
   methods: {

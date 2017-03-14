@@ -1,4 +1,4 @@
-const apiURL = 'https://tiy-tn-class-api-fall-16.herokuapp.com/puppies/ryan';
+const apiURL = 'https://tiy-tn-class-api-fall-16.herokuapp.com/puppies/ecengels88';
 const jsonHeaders = {
   Accept: 'application/json',
   'Content-Type': 'application/json'
@@ -71,4 +71,8 @@ export function update(id, formData) {
     .then((puppy) => {
       dispatch(updateComplete(puppy));
     });
+}
+
+export function toggleAdopted(puppy) {
+  return update(puppy.id, { ...puppy, adopted: !puppy.adopted });
 }
