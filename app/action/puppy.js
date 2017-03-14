@@ -23,6 +23,20 @@ export function findAll() {
   });
 }
 
+export function findOneComplete(data = {}) {
+  return {
+    type: 'PUPPY@FINDONE_COMPLETE',
+    data
+  };
+}
+
+export function findOne(id) {
+  return dispatch => fetch(`${apiURL}/${id}`).then(parseJson)
+      .then((response) => {
+        dispatch(findOneComplete(response));
+      });
+}
+
 export function createComplete(data = {}) {
   return {
     type: 'PUPPY@CREATE_COMPLETE',
