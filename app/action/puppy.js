@@ -54,3 +54,21 @@ export function create(formData) {
       dispatch(createComplete(puppy));
     });
 }
+
+export function updateComplete(data = {}) {
+  return {
+    type: 'PUPPY@UPDATE_COMPLETE',
+    data
+  };
+}
+
+export function update(id, formData) {
+  return dispatch => fetch(`${apiURL}/${id}`, {
+    method: 'PUT',
+    headers: jsonHeaders,
+    body: JSON.stringify(formData),
+  }).then(parseJson)
+    .then((puppy) => {
+      dispatch(updateComplete(puppy));
+    });
+}
