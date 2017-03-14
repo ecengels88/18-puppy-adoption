@@ -8,8 +8,8 @@ export function findAllComplete(data = []) {
 }
 
 export function findAll() {
-  return dispatch => fetch(apiUrl)
-  .then(parseJson)
+  return dispatch => fetch(apiURL)
+  .then(parsejson)
   .then((response) => {
     dispatch(findAllComplete(response));
   });

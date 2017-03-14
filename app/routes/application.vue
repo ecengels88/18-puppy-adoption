@@ -23,42 +23,16 @@
               <h2 class="panel-heading">
                 Adopt a Pupper
               </h2>
-              <div class="panel-block">
+              <div v-for="puppy in puppies" class="panel-block">
                 <div class="media">
                   <div class="media-left">
                     <p class="image is-64x64">
-                      <img src="https://s-media-cache-ak0.pinimg.com/736x/ce/d0/ba/ced0ba9d7163753c3406049c75abe315.jpg" alt="" class="">
+                      <img :src="puppy.image_url" alt="" class="">
                     </p>
                   </div>
                   <div class="media-right">
-                    <h3 class="name">Shawarma</h3>
-                    <router-link to="/detail(id)" class="button">Read More</router-link>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-block">
-                <div class="media">
-                  <div class="media-left">
-                    <p class="image is-64x64">
-                      <img src="http://media.breitbart.com/media/2016/11/puppy-getty-640x480.jpg" alt="" class="">
-                    </p>
-                  </div>
-                  <div class="media-right">
-                    <h3 class="name">DiGiorno</h3>
-                    <router-link to="/detail(id)" class="button">Read More</router-link>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-block">
-                <div class="media">
-                  <div class="media-left">
-                    <p class="image is-64x64">
-                      <img src="http://www.notcot.com/images/2012/06/duckling-swim-03-2395.jpg" alt="" class="">
-                    </p>
-                  </div>
-                  <div class="media-right">
-                    <h3 class="name">Peking</h3>
-                    <router-link to="/detail(id)" class="button">Read More</router-link>
+                    <h3 class="name">{{puppy.name}}</h3>
+                    <router-link :to="{ name: 'details', params: { id: puppy.id } }" class="button">Read More</router-link>
                   </div>
                 </div>
               </div>
