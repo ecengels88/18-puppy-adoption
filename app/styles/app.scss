@@ -1,16 +1,20 @@
 // @import 'yoga';
 // @import 'normalize';
-@import 'bulma';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+$blue: hsl(218, 71%,  53%);
+$primary: $blue;
+$link: $blue;
+
+@import 'bulma';
 @import 'font-awesome';
 @import 'box-sizing';
 
-$c-blue: hsl(218, 71%,  53%);
-$primary: $c-blue;
-$link: $c-blue;
-
-
+.image img {
+  height: 100%;
+  object-fit: cover;
+}
 
 .nav {
   background: $primary;

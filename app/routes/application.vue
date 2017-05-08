@@ -26,9 +26,11 @@
               <div v-for="puppy in puppies" class="panel-block">
                 <div class="media">
                   <div class="media-left">
-                    <p class="image is-64x64">
-                      <img :src="puppy.image_url" alt="" class="">
-                    </p>
+                    <div class="image is-64x64">
+                      <div class="wrapper">
+                        <img :src="puppy.image_url" alt="" class="is-64x64">
+                      </div>
+                    </div>
                   </div>
                   <div class="media-right">
                     <h3 class="name">{{puppy.name}}</h3>
